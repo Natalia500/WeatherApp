@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.weatherInfo {
+  //background-image: url(../../img/img.jpg);
+  background-color: bisque;
+  margin-top: 250px;
+  padding: 70px 0 50px 20px;
+  //height: 60%;
+  height: 400px;
+  width: 500px;
+  h2 {
+    font-family: "Poller One", cursive;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.wrapperWeatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 400px;
+    width: 35%;
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapperWeatherInfo {
+    img {
+      display: none;
+    }
+  }
+}

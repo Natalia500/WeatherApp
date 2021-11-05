@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+//import Form from "./components/Main/Form/Form";
+//import WeatherInfo from "./components/Main/WeatherInfo/WeatherInfo";
+import { BrowserRouter, Route } from "react-router-dom";
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Interesting from "././components/Interesting/Interesting"
+import Signs from "././components/Signs/Signs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+
+
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Header />
+          <div className='wrapper'>
+            <div className='Main'>
+              <Route exact path='/' render={() => <Main />} />
+            </div>
+            
+            <div className='mainInformation'>
+     </div>
+  
+  <Route exact path='/interesting' render={() => <Interesting />} />
+          <Route exact path='/signs' render={() => <Signs />} />
+        </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
+
 }
 
 export default App;

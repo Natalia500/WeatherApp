@@ -1,0 +1,13 @@
+.wrapperDataWeather .infoError {
+  font-size: 15px;
+  color: red;
+  font-family: 'Poller One', cursive;
+  padding-top: 10px;
+}
+
+.wrapperDataWeather .dataWeather p {
+  font-size: 15px;
+  font-family: 'Poller One', cursive;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=WeatherInfo.css.map */

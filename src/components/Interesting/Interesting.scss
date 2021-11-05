@@ -1,0 +1,31 @@
+.InterestingInfo {
+    margin-top: 100px;
+    margin-left: 30px;
+
+    .imgDesertAtakama {
+        width: 100%;
+        height: 500px;
+        padding: 0 30px 20px 0;
+    }
+    .imgLightning {
+        float: left;
+        padding-right: 20px;
+    }
+    .imgClouds{
+        padding-bottom: 20px;
+    }
+    h1 {
+        font-family: "Poller One", cursive;
+    }
+    p {
+        font-family: "Poller One", cursive;
+    }
+}
+
+@media (max-width: 720px) {
+    .InterestingInfo {
+        .imgDesertAtakama {
+            height: auto;
+        }
+    }
+}
